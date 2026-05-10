@@ -4,138 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iván Gaitán | Desarrollador</title>
-    <style>
-        :root {
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --accent: #3b82f6; /* Azul Claro Moderno */
-            --accent-soft: #dbeafe;
-            --border: #e2e8f0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        /* --- Header / Sobre Mí --- */
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .profile-title {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--text-main);
-        }
-
-        .profile-subtitle {
-            font-size: 1.2rem;
-            color: var(--accent);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .bio {
-            max-width: 600px;
-            margin: 20px auto;
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
-
-        /* --- Proyectos --- */
-        .section-title {
-            border-bottom: 2px solid var(--accent-soft);
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            font-size: 1.5rem;
-        }
-
-        .project-grid {
-            display: grid;
-            gap: 20px;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .project-card:hover {
-            border-color: var(--accent);
-            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
-            transform: translateY(-3px);
-        }
-
-        .project-card h3 {
-            margin: 0 0 10px 0;
-            color: var(--accent);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .project-card p {
-            margin: 0;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .tags {
-            margin-top: 15px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tag {
-            background: var(--accent-soft);
-            color: var(--accent);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-
-        /* --- Footer / Links --- */
-        footer {
-            margin-top: 80px;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            padding-top: 40px;
-        }
-
-        .social-links a {
-            margin: 0 15px;
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .social-links a:hover {
-            color: var(--accent);
-        }
-    </style>
+    <!-- Aquí vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -145,40 +15,31 @@
         <div class="profile-subtitle">Software Developer</div>
         <p class="bio">
             Apasionado por el ecosistema .NET y la creación de soluciones eficientes. 
-            Me especializo en el desarrollo multiplataforma y la integración de IA 
-            para resolver problemas del mundo real.
+            Me especializo en el desarrollo multiplataforma y la integración de IA.
         </p>
     </header>
 
     <section>
         <h2 class="section-title">Proyectos Destacados</h2>
-        
         <div class="project-grid">
-            <!-- Proyecto 1 -->
             <a href="https://github.com/gaitanivan/PORY-IA-A" class="project-card">
                 <h3>PORY IA-A 🟢</h3>
-                <p>Aplicación de detección de objetos en tiempo real con .NET MAUI y YOLO11. Implementación de inferencia local optimizada con ONNX.</p>
+                <p>Detección de objetos en tiempo real con .NET MAUI y YOLO11.</p>
                 <div class="tags">
                     <span class="tag">.NET MAUI</span>
                     <span class="tag">C#</span>
                     <span class="tag">AI</span>
-                    <span class="tag">ONNX</span>
                 </div>
             </a>
-
-            <!-- Puedes agregar más tarjetas así -->
         </div>
     </section>
 
     <footer>
         <div class="social-links">
             <a href="https://github.com/gaitanivan">GitHub</a>
-            <a href="mailto:tu-correo@ejemplo.com">Contacto</a>
-            <a href="#">LinkedIn</a>
+            <a href="mailto:tu-correo@ejemplo.com">Email</a>
         </div>
-        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 20px;">
-            © 2026 - Iván Gaitán
-        </p>
+        <p style="color: #64748b; font-size: 0.8rem; margin-top: 20px;">© 2026 - Iván Gaitán</p>
     </footer>
 </div>
 
