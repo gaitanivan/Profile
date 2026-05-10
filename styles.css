@@ -1,0 +1,117 @@
+:root {
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --accent: #3b82f6; /* Azul Claro */
+    --accent-soft: #dbeafe;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.profile-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profile-subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 20px auto;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.section-title {
+    border-bottom: 2px solid var(--accent-soft);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.project-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+    transform: translateY(-3px);
+}
+
+.project-card h3 {
+    margin: 0 0 10px 0;
+    color: var(--accent);
+}
+
+.tags {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    padding-top: 40px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
